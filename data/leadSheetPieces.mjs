@@ -1583,6 +1583,22 @@ const tunes = [
 		"Ab" cded"Fm" fefg |"Bb" e d3"Gm" a g2 f |"Fm" agag"Bb" agfe |"Ab" agba"Bb" gfed |"Eb" d4 e4 |]`,
 		composers: ['Irad Doron'],
 	},
+	{
+		id: 109,
+		mainKey: 'G',
+		meter: '4/4',
+		noteLength: '1/8',
+		body: `"G" z2 z D B2 BA |"Bm" B d3 z2 Bd |"C" e2 eg"D" fedc |"Bm" dfag-"Em" g2 Bc |
+		"Am" c3 c"C" edcB |"D" B4"Bm" A4 |"C" G4"Am" B3 c |"D" A8 |
+		"G" z2 z D B2 d^c |"F#7" B^AB^c edcd- |"Bm" d3 B f2 fe |"Em" gfed"A7" ^cege |
+		"D" f3 A f2 fe |"F#m" f a3 z2 fa |"G" b2 bd'"A" ^c'bag |"F#m" a^c'e'd'-"Bm" d'2 fg |
+		"Em" gfed"A" ^ceag |"D" fedc"G7" Bdg=f |"Cm" _edc_B"D" Acfe |"Eb" dc=f_e"D7" dc_BA |
+		"Gm" _B3 D B2 BA |"Bb" _B d3 z2 Bd |"Cm" _e2 eg"D7" fedc |"Eb" A2 _B2 c3 A |
+		"Eb" _Bd_eg"F" Ag=fe |"Gm" d_Bcd"D7" ^F_edc |"Eb" _BAcB"F" AG=FA |"Bb" _B=FAB"D7" cBAG |
+		"G" G3 D B2 BA |"Bm" B F3 z2 B,D |"C" E2 EG"D" FEDc |"G" BGBd"C" e3 e |
+		"Am" eAce"Bm" f3 d |"C" eceg"D7" b2 a2 |"Cm" a6 g2 |"G" g8 |] `,
+		composers: ['Irad Doron'],
+	},
 ];
 
 export default tunes;
