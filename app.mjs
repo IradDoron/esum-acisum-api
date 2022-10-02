@@ -1,0 +1,57 @@
+import express from 'express';
+import fs from 'fs';
+import artists from './data/artists.mjs';
+import chordProgressions from './data/chordProgressions.mjs';
+import leadSheetPieces from './data/leadSheetPieces.mjs';
+import musicTheory from './data/musicTheory.mjs';
+import songs from './data/songs.mjs';
+
+const { PORT, HOST } = process.env;
+
+const app = express();
+
+app.get('/lead-sheet-pieces/all', (req, res) => {
+	res.send(leadSheetPieces);
+});
+
+app.get('/lead-sheet-pieces/search/:key/:value', (req, res) => {
+	let { key, value } = req.params;
+	console.log(key, value);
+	if (key === 'id') {
+		value = parseInt(value);
+	}
+	const piece = leadSheetPieces.find(
+		(piece) => piece[key] === value
+	);
+	console.log(piece);
+	res.send(piece);
+});
+
+app.get('/lead-sheet-pieces/help', (req, res) => {
+	res.send(`
+		<h1>TODO</h1>
+		<p>Write help page.</p>
+		
+	`);
+});
+
+
+app.get('/chord-progressions/all', (req, res) => {
+	res.send(chordProgressions);
+});
+
+app.get('/music-theory/all', (req, res) => {
+	res.send(musicTheory);
+});
+
+app.get('/songs/all', (req, res) => {
+	res.send(songs);
+});
+
+app.get('/artists/all', (req, res) => {
+	res.send(artists);
+});
+
+app.listen(PORT, HOST, () => {
+	console.log(`server listen on http://${HOST}:${PORT}...`);
+});
