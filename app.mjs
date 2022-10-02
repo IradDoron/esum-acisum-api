@@ -10,6 +10,11 @@ const { PORT, HOST } = process.env;
 
 const app = express();
 
+app.get('/' ,(req, res) => {
+	res.send('API is running...');
+});
+
+
 app.get('/lead-sheet-pieces/all', (req, res) => {
 	res.send(leadSheetPieces);
 });
