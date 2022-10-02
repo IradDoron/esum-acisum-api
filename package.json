@@ -4,20 +4,14 @@
 		"express": "^4.18.1"
 	},
 	"devDependencies": {
-		"@types/express": "^4.17.14",
-		"nodemon": "^2.0.20",
-		"typescript": "^4.8.4"
+		"nodemon": "^2.0.20"
 	},
 	"name": "lead-sheet-pieces-api",
 	"version": "1.0.0",
 	"main": "app.mjs",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node -r dotenv/config app.mjs",
 		"dev": "nodemon -r dotenv/config app.mjs"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"description": ""
+	"license": "ISC"
 }

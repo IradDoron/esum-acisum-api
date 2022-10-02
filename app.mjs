@@ -1,5 +1,4 @@
 import express from 'express';
-import fs from 'fs';
 import artists from './data/artists.mjs';
 import chordProgressions from './data/chordProgressions.mjs';
 import leadSheetPieces from './data/leadSheetPieces.mjs';
