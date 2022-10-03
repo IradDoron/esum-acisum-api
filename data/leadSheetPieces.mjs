@@ -47,13 +47,18 @@ body: `"C" E E C C |"G" D D E E`,
 
 const tunes = [
 	{
+		seriesId: 1,
 		seriesTitle: 'Piano Pieces for Newbies',
+		seriesDescription: 'A collection of easy piano pieces for beginners.',
 		collections: [
 			{
+				collectionId: 1,
 				collectionTitle: 'First Steps',
+				collectionDescription: 'The first steps in learning to play the piano',
+
 				pieces: [
 					{
-						id: 1,
+						pieceId: 1,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/2',
@@ -65,7 +70,7 @@ const tunes = [
 						tags: ['exercise', 'easy'],
 					},
 					{
-						id: 2,
+						pieceId: 2,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/1',
@@ -75,7 +80,7 @@ const tunes = [
 						tags: ['exercise', 'easy'],
 					},
 					{
-						id: 3,
+						pieceId: 3,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/2',
@@ -85,7 +90,7 @@ const tunes = [
 						tags: ['exercise', 'easy'],
 					},
 					{
-						id: 4,
+						pieceId: 4,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/2',
@@ -95,7 +100,7 @@ const tunes = [
 						tags: ['exercise', 'easy'],
 					},
 					{
-						id: 5,
+						pieceId: 5,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/2',
@@ -104,7 +109,7 @@ const tunes = [
 						title: 'Little Exercise',
 					},
 					{
-						id: 6,
+						pieceId: 6,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/2',
@@ -114,7 +119,7 @@ const tunes = [
 						title: 'Little Exercise',
 					},
 					{
-						id: 7,
+						pieceId: 7,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/2',
@@ -124,7 +129,7 @@ const tunes = [
 						title: 'Little Exercise',
 					},
 					{
-						id: 8,
+						pieceId: 8,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/2',
@@ -135,7 +140,7 @@ const tunes = [
 						title: 'Little Exercise',
 					},
 					{
-						id: 9,
+						pieceId: 9,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -146,7 +151,7 @@ const tunes = [
 						title: 'Little Exercise',
 					},
 					{
-						id: 10,
+						pieceId: 10,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -159,7 +164,7 @@ const tunes = [
 					},
 
 					{
-						id: 11,
+						pieceId: 11,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -171,7 +176,7 @@ const tunes = [
 						title: 'Little Exercise',
 					},
 					{
-						id: 12,
+						pieceId: 12,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -183,7 +188,7 @@ const tunes = [
 						title: 'Little Exercise',
 					},
 					{
-						id: 13,
+						pieceId: 13,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -195,7 +200,7 @@ D2 C2 | E2 D2 | D2 C2 |"C" C4 |]`,
 						title: 'Little Exercise',
 					},
 					{
-						id: 14,
+						pieceId: 14,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -207,7 +212,7 @@ E E E2 |"G" E D D2 |"C" E D C D |"G" E D D2 |
 						title: 'Little Exercise',
 					},
 					{
-						id: 15,
+						pieceId: 15,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -219,7 +224,7 @@ E E E2 |"G" E D D2 |"C" E D C D |"G" E D D2 |
 						title: 'Little Exercise',
 					},
 					{
-						id: 16,
+						pieceId: 16,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -231,7 +236,7 @@ E E E2 |"G" E D D2 |"C" E D C D |"G" E D D2 |
 						title: 'Little Exercise',
 					},
 					{
-						id: 17,
+						pieceId: 17,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -242,7 +247,7 @@ E E E2 |"G" E D D2 |"C" E D C D |"G" E D D2 |
 						title: 'Little Exercise',
 					},
 					{
-						id: 18,
+						pieceId: 18,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -253,7 +258,7 @@ E E E2 |"G" E D D2 |"C" E D C D |"G" E D D2 |
 						title: 'Little Exercise',
 					},
 					{
-						id: 19,
+						pieceId: 19,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -265,7 +270,7 @@ E E E2 |"G" E D D2 |"C" E D C D |"G" E D D2 |
 						title: 'Little Exercise',
 					},
 					{
-						id: 20,
+						pieceId: 20,
 						mainKey: 'C',
 						meter: '4/4',
 						noteLength: '1/4',
@@ -278,6 +283,7 @@ E E E2 |"G" E D D2 |"C" E D C D |"G" E D D2 |
 				],
 			},
 			{
+				collectionId: 2,
 				collectionTitle: 'Practice in C Major',
 				pieces: [
 					{
@@ -593,6 +599,7 @@ E F E D |"F" D E D C |"G" F G F E |"C" D E C2 |] `,
 				],
 			},
 			{
+				collectionId: 3,
 				collectionTitle: 'TODO: organize into collections',
 				pieces: [
 					{
@@ -879,9 +886,12 @@ CDEF GABc |"F" FAcB AGFE |"G" DEFG ABcA |"Em" BAGF GFED |
 		],
 	},
 	{
+		seriesId: 2,
 		seriesTitle: 'Piano Pieces for Intermediate Players',
+		seriesDescription: 'Piano Pieces for Intermediate Players',
 		collections: [
 			{
+				collectionId: 1,
 				collectionsTitle: 'TODO: organize these',
 				pieces: [
 					{
@@ -1316,6 +1326,7 @@ f'4 c'4 g'4 d'4 |"Cm" f'2e'2g2e'2 "Ab" d'2c'2f2b2 |"Eb" a2g2B2e2 "Bb" d8 |
 				],
 			},
 			{
+				collectionId: 2,
 				collectionTitle: 'Wide Range Ballads',
 				pieces: [
 					{
@@ -1338,9 +1349,12 @@ f'4 c'4 g'4 d'4 |"Cm" f'2e'2g2e'2 "Ab" d'2c'2f2b2 |"Eb" a2g2B2e2 "Bb" d8 |
 		],
 	},
 	{
+		seriesId: 3,
 		seriesTitle: 'Melodic Patterns',
+		seriesDescription: 'Practice melodic patterns in various keys',
 		collections: [
 			{
+				collectionId: 1,
 				collectionTitle: 'Melodic Patterns',
 				pieces: [
 					{
@@ -1421,9 +1435,12 @@ CG,A,B, CEDB, |CCB,C DCDB, | z cBc dcdB | z2 c'2 z4 |] `,
 		],
 	},
 	{
+		seriesId: 4,
 		seriesTitle: 'Classical Arrangements',
+		seriesDescription: 'Classical Arrangements in lead sheets format',
 		collections: [
 			{
+				collectionId: 1,
 				collectionTitle: 'Notebook for Anna Magdalena Bach',
 				pieces: [
 					{
@@ -1592,6 +1609,7 @@ CD =EF GA |"C7" B2 =e2 e/f/g |"F/A" c2 "Bb" BA "C" GA |"F" F6 |
 				],
 			},
 			{
+				collectionId: 2,
 				collectionTitle: 'The Well-Tempered Clavier Book 1',
 				pieces: [
 					{
@@ -1622,10 +1640,12 @@ CD =EF GA |"C7" B2 =e2 e/f/g |"F/A" c2 "Bb" BA "C" GA |"F" F6 |
 				],
 			},
 			{
+				collectionId: 3,
 				collectionTitle: 'The Well-Tempered Clavier Book 2',
 				pieces: [],
 			},
 			{
+				collectionId: 4,
 				collectionTitle: 'The English Suites',
 				pieces: [
 					{
