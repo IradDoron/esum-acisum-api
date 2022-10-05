@@ -1,3 +1,4 @@
+import cors from 'cors';
 import express from 'express';
 import artists from './data/artists.mjs';
 import chordProgressions from './data/chordProgressions.mjs';
@@ -8,6 +9,8 @@ import songs from './data/songs.mjs';
 const { PORT, HOST } = process.env;
 
 const app = express();
+
+app.use(cors());
 
 app.get('/' ,(req, res) => {
 	res.send('API is running...');
