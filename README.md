@@ -20,6 +20,6 @@ Example:
 
 https://esum-acisum-api.herokuapp.com/chord-progressions/query/?groupTitle=diatonic-major&collectionId=1&progressionId=1&isRootPosition=false&inversionIndex=0
 
-Response: 
+Response:
 
-[ "I", "IV", "V", "I" ]
+[ "I", "I6", "IV", "V" ]

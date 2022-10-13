@@ -43,7 +43,7 @@ app.get('/chord-progressions/all', (req, res) => {
 	res.send(chordProgressions);
 });
 
-app.get('/chord-progressions/query', (req, res) => {
+app.get('/chord-progressions', (req, res) => {
 	// should get: groupTitle, collectionId, progressionId, isRootPosition, inversionIndex
 	const {
 		groupTitle,
