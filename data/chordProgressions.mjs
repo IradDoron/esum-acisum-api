@@ -4,7 +4,7 @@ const chordProgressions = [
 		collections: [
 			{
 				beats: 4,
-				collectionsStructure: ['T', 'T', 'SD', 'D'],
+				collectionStructure: ['T', 'T', 'SD', 'D'],
 				structureString: 'T-T-SD-D',
 				progressions: [
 					{ rootPosition: 'I-I-IV-V', inversions: ['I-I6-IV-V'] },
@@ -16,7 +16,7 @@ const chordProgressions = [
 			},
 			{
 				beats: 4,
-				collectionsStructure: ['T', 'SD', 'D', 'T'],
+				collectionStructure: ['T', 'SD', 'D', 'T'],
 				structureString: 'T-SD-D-T',
 				progressions: [
 					{ rootPosition: 'I-ii-V-I', inversions: ['I-ii6-V-I'] },
@@ -29,7 +29,7 @@ const chordProgressions = [
 			},
 			{
 				beats: 4,
-				collectionsStructure: ['T', 'SD', 'SD', 'D'],
+				collectionStructure: ['T', 'SD', 'SD', 'D'],
 				structureString: 'T-SD-SD-D',
 				progressions: [
 					{ rootPosition: 'I-IV-ii-V', inversions: ['I-IV6-ii-V'] },
@@ -37,7 +37,7 @@ const chordProgressions = [
 			},
 			{
 				beats: 4,
-				collectionsStructure: ['T', 'SD', 'T', 'D'],
+				collectionStructure: ['T', 'SD', 'T', 'D'],
 				structureString: 'T-SD-T-D',
 				progressions: [
 					{ rootPosition: 'I-IV-vi-V', inversions: ['I-IV6-vi-V'] },
