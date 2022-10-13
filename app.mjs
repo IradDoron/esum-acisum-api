@@ -11,6 +11,7 @@ const { PORT, HOST } = process.env;
 const app = express();
 
 app.use(cors());
+app.use(express.json({ extended: true, limit: '1mb' }));
 
 app.get('/', (req, res) => {
 	res.send('API is running...');
@@ -65,12 +66,62 @@ app.get('/chord-progressions', (req, res) => {
 		(progression) => progression.id === parseInt(progressionId)
 	);
 
-
 	if (isRootPosition === 'true') {
 		res.send(progression.rootPosition);
 	} else {
 		res.send(progression.inversions[inversionIndex]);
 	}
+});
+
+app.post('/chord-progressions/array', (req, res) => {
+	// should get array of: groupTitle, collectionId, progressionId, isRootPosition, inversionIndex
+
+	function fineProgression(
+		groupTitle,
+		collectionId,
+		progressionId,
+		isRootPosition,
+		inversionIndex
+	) {
+		console.log(isRootPosition);
+		const group = chordProgressions.find(
+			(group) => group.groupTitle === groupTitle
+		);
+
+		const collection = group.collections.find(
+			(collection) => collection.id === parseInt(collectionId)
+		);
+
+		const progression = collection.progressions.find(
+			(progression) => progression.id === parseInt(progressionId)
+		);
+
+		if (isRootPosition) {
+			return progression.rootPosition;
+		} else {
+			return progression.inversions[inversionIndex];
+		}
+	}
+
+	const { progressions } = req.body;
+	const progressionsTokens = progressions.map((progression) => {
+		const {
+			groupTitle,
+			collectionId,
+			progressionId,
+			isRootPosition,
+			inversionIndex,
+		} = progression;
+		return fineProgression(
+			groupTitle,
+			collectionId,
+			progressionId,
+			isRootPosition,
+			inversionIndex
+		);
+	});
+
+	res.send(progressionsTokens);
 });
 
 app.get('/music-theory/all', (req, res) => {
