@@ -67,7 +67,7 @@ app.get('/chord-progressions/query', (req, res) => {
 
 
 	if (isRootPosition === 'true') {
-		res.send('send root position');
+		res.send(progression.rootPosition);
 	} else {
 		res.send(progression.inversions[inversionIndex]);
 	}
