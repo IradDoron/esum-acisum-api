@@ -12,10 +12,9 @@ const app = express();
 
 app.use(cors());
 
-app.get('/' ,(req, res) => {
+app.get('/', (req, res) => {
 	res.send('API is running...');
 });
-
 
 app.get('/lead-sheet-pieces/all', (req, res) => {
 	res.send(leadSheetPieces);
@@ -27,9 +26,7 @@ app.get('/lead-sheet-pieces/search/:key/:value', (req, res) => {
 	if (key === 'id') {
 		value = parseInt(value);
 	}
-	const piece = leadSheetPieces.find(
-		(piece) => piece[key] === value
-	);
+	const piece = leadSheetPieces.find((piece) => piece[key] === value);
 	console.log(piece);
 	res.send(piece);
 });
@@ -42,9 +39,37 @@ app.get('/lead-sheet-pieces/help', (req, res) => {
 	`);
 });
 
-
 app.get('/chord-progressions/all', (req, res) => {
 	res.send(chordProgressions);
+});
+
+app.get('/chord-progressions/query', (req, res) => {
+	// should get: groupTitle, collectionId, progressionId, isRootPosition, inversionIndex
+	const {
+		groupTitle,
+		collectionId,
+		progressionId,
+		isRootPosition,
+		inversionIndex,
+	} = req.query;
+	console.log(req.query);
+	const group = chordProgressions.find(
+		(group) => group.groupTitle === groupTitle
+	);
+
+	const collection = group.collections.find(
+		(collection) => collection.id === parseInt(collectionId)
+	);
+
+	const progression = collection.progressions.find(
+		(progression) => progression.id === parseInt(progressionId)
+	);
+
+	if (isRootPosition) {
+		res.send(progression.rootPosition);
+	} else {
+		res.send(progression.inversions[inversionIndex]);
+	}
 });
 
 app.get('/music-theory/all', (req, res) => {
