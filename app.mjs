@@ -65,8 +65,9 @@ app.get('/chord-progressions/query', (req, res) => {
 		(progression) => progression.id === parseInt(progressionId)
 	);
 
-	if (isRootPosition) {
-		res.send(progression.rootPosition);
+
+	if (isRootPosition === 'true') {
+		res.send('send root position');
 	} else {
 		res.send(progression.inversions[inversionIndex]);
 	}
