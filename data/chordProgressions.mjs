@@ -1,6 +1,6 @@
 const chordProgressions = [
 	{
-		groupTitle: 'Diatonic Major',
+		groupTitle: 'diatonic-major',
 		collections: [
 			{
 				id: 1,
