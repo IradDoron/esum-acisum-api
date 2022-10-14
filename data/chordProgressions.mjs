@@ -11,27 +11,27 @@ const chordProgressions = [
 					{
 						id: 1,
 						rootPosition: ['I', 'I', 'IV', 'V'],
-						inversions: [['I', 'I6', 'IV', 'V']],
+						inversions: [['I', 'I/3rd', 'IV', 'V']],
 					},
 					{
 						id: 2,
 						rootPosition: ['I', 'vi', 'IV', 'V'],
-						inversions: [['I', 'vi6', 'IV', 'V']],
+						inversions: [['I', 'vi/3rd', 'IV', 'V']],
 					},
 					{
 						id: 3,
 						rootPosition: ['I', 'vi', 'ii', 'V'],
-						inversions: [['I', 'vi6', 'ii', 'V']],
+						inversions: [['I', 'vi/3rd', 'ii', 'V']],
 					},
 					{
 						id: 4,
 						rootPosition: ['I', 'iii', 'IV', 'V'],
-						inversions: [['I', 'iii6', 'IV', 'V']],
+						inversions: [['I', 'iii/3rd', 'IV', 'V']],
 					},
 					{
 						id: 5,
 						rootPosition: ['I', 'vi', 'ii', 'V'],
-						inversions: [['I', 'vi6', 'ii', 'V']],
+						inversions: [['I', 'vi/3rd', 'ii', 'V']],
 					},
 				],
 			},
