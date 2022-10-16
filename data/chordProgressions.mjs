@@ -84,6 +84,11 @@ const chordProgressions = [
 						rootPosition: ['I', 'IV', 'ii', 'V'],
 						inversions: [['I', 'IV6', 'ii', 'V']],
 					},
+					{
+						id: 2,
+						rootPosition: ['vi', 'IV', 'ii', 'V'],
+						inversions: [['vi', 'IV6', 'ii', 'V']],
+					},
 				],
 			},
 			{
